@@ -1,9 +1,32 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Write CSS code below */
+
+section {
+  display: block;
+}
+.main-content {
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-rows: 20% 80%;
+  grid-template-columns: 300px 700px;
+}
+.left-section {
+  grid-area: 1/2/3/2;
+  grid-column: span 1;
+  background-color: #242531;
+}
+
+.right-section {
+  grid-area: 1/2/3/3;
+  grid-column: span 1 / span2;
+  background-color: #f7f7f7;
+}
